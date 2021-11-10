@@ -1,0 +1,190 @@
+- !circadian_rhythm.Trigger
+  name: "adjust brightness during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.circadian_rhythm.brightness.Event { value: 30 } # from 0:00 to 2:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 30 } # from 2:00 to 4:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 40 } # from 4:00 to 6:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 60 } # from 6:00 to 8:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 80 } # from 8:00 to 10:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 100 } # from 10:00 to 12:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 100 } # from 12:00 to 14:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 100 } # from 14:00 to 16:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 80 } # from 16:00 to 18:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 60 } # from 18:00 to 20:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 40 } # from 20:00 to 22:00
+    - !light.event.circadian_rhythm.brightness.Event { value: 30 } # from 22:00 to 24:00
+
+- !circadian_rhythm.Trigger
+  name: "adjust show starting brightness during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.show.starting_brightness.Event { value: 30 }
+    - !light.event.show.starting_brightness.Event { value: 30 }
+    - !light.event.show.starting_brightness.Event { value: 40 }
+    - !light.event.show.starting_brightness.Event { value: 60 }
+    - !light.event.show.starting_brightness.Event { value: 80 }
+    - !light.event.show.starting_brightness.Event { value: 100 }
+    - !light.event.show.starting_brightness.Event { value: 100 }
+    - !light.event.show.starting_brightness.Event { value: 100 }
+    - !light.event.show.starting_brightness.Event { value: 80 }
+    - !light.event.show.starting_brightness.Event { value: 60 }
+    - !light.event.show.starting_brightness.Event { value: 40 }
+    - !light.event.show.starting_brightness.Event { value: 30 }
+
+- !circadian_rhythm.Trigger
+  name: "adjust show ending brightness during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.show.ending_brightness.Event { value: 60 }
+    - !light.event.show.ending_brightness.Event { value: 60 }
+    - !light.event.show.ending_brightness.Event { value: 80 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 100 }
+    - !light.event.show.ending_brightness.Event { value: 80 }
+    - !light.event.show.ending_brightness.Event { value: 60 }
+
+- !circadian_rhythm.Trigger
+  name: "adjust show starting saturation during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.show.starting_saturation.Event { value: 30 } # from 0:00 to 4:00
+    - !light.event.show.starting_saturation.Event { value: 60 } # from 4:00 to 8:00
+    - !light.event.show.starting_saturation.Event { value: 90 } # from 8:00 to 12:00
+    - !light.event.show.starting_saturation.Event { value: 90 } # from 12:00 to 16:00
+    - !light.event.show.starting_saturation.Event { value: 60 } # from 16:00 to 20:00
+    - !light.event.show.starting_saturation.Event { value: 30 } # from 20:00 to 24:00
+
+- !circadian_rhythm.Trigger
+  name: "adjust show ending saturation during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.show.starting_saturation.Event { value: 60 } # from 0:00 to 4:00
+    - !light.event.show.starting_saturation.Event { value: 90 } # from 4:00 to 8:00
+    - !light.event.show.starting_saturation.Event { value: 100 } # from 8:00 to 12:00
+    - !light.event.show.starting_saturation.Event { value: 100 } # from 12:00 to 16:00
+    - !light.event.show.starting_saturation.Event { value: 90 } # from 16:00 to 20:00
+    - !light.event.show.starting_saturation.Event { value: 60 } # from 20:00 to 24:00
+
+- !circadian_rhythm.Trigger
+  name: "adjust temperature during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.circadian_rhythm.temperature.Event { value: 2700 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 2700 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 3600 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 4600 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 5600 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 6500 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 6500 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 5600 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 4600 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 3600 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 2700 }
+    - !light.event.circadian_rhythm.temperature.Event { value: 2700 }
+
+- !circadian_rhythm.Trigger
+  name: "adjust hue during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.circadian_rhythm.hue.Event { value: 0 } # from 0:00 to 1:00
+    - !light.event.circadian_rhythm.hue.Event { value: 15 } # from 1:00 to 2:00
+    - !light.event.circadian_rhythm.hue.Event { value: 30 } # from 2:00 to 3:00
+    - !light.event.circadian_rhythm.hue.Event { value: 45 } # from 3:00 to 4:00
+    - !light.event.circadian_rhythm.hue.Event { value: 60 } # from 4:00 to 5:00
+    - !light.event.circadian_rhythm.hue.Event { value: 75 } # from 5:00 to 6:00
+    - !light.event.circadian_rhythm.hue.Event { value: 90 } # from 6:00 to 7:00
+    - !light.event.circadian_rhythm.hue.Event { value: 105 } # from 7:00 to 8:00
+    - !light.event.circadian_rhythm.hue.Event { value: 120 } # from 8:00 to 9:00
+    - !light.event.circadian_rhythm.hue.Event { value: 135 } # from 9:00 to 10:00
+    - !light.event.circadian_rhythm.hue.Event { value: 150 } # from 10:00 to 11:00
+    - !light.event.circadian_rhythm.hue.Event { value: 165 } # from 11:00 to 12:00
+    - !light.event.circadian_rhythm.hue.Event { value: 180 } # from 12:00 to 13:00
+    - !light.event.circadian_rhythm.hue.Event { value: 195 } # from 13:00 to 14:00
+    - !light.event.circadian_rhythm.hue.Event { value: 210 } # from 14:00 to 15:00
+    - !light.event.circadian_rhythm.hue.Event { value: 225 } # from 15:00 to 16:00
+    - !light.event.circadian_rhythm.hue.Event { value: 240 } # from 16:00 to 17:00
+    - !light.event.circadian_rhythm.hue.Event { value: 255 } # from 17:00 to 18:00
+    - !light.event.circadian_rhythm.hue.Event { value: 270 } # from 18:00 to 19:00
+    - !light.event.circadian_rhythm.hue.Event { value: 285 } # from 19:00 to 20:00
+    - !light.event.circadian_rhythm.hue.Event { value: 300 } # from 20:00 to 21:00
+    - !light.event.circadian_rhythm.hue.Event { value: 315 } # from 21:00 to 22:00
+    - !light.event.circadian_rhythm.hue.Event { value: 330 } # from 22:00 to 23:00
+    - !light.event.circadian_rhythm.hue.Event { value: 345 } # from 23:00 to 24:00
+    - !light.event.circadian_rhythm.hue.Event { value: 360 } # from 24:00 to 25:00
+
+- !circadian_rhythm.Trigger
+  name: "adjust show starting hue during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.show.starting_hue.Event { value: 0 }
+    - !light.event.show.starting_hue.Event { value: 15 }
+    - !light.event.show.starting_hue.Event { value: 30 }
+    - !light.event.show.starting_hue.Event { value: 45 }
+    - !light.event.show.starting_hue.Event { value: 60 }
+    - !light.event.show.starting_hue.Event { value: 75 }
+    - !light.event.show.starting_hue.Event { value: 90 }
+    - !light.event.show.starting_hue.Event { value: 105 }
+    - !light.event.show.starting_hue.Event { value: 120 }
+    - !light.event.show.starting_hue.Event { value: 135 }
+    - !light.event.show.starting_hue.Event { value: 150 }
+    - !light.event.show.starting_hue.Event { value: 165 }
+    - !light.event.show.starting_hue.Event { value: 180 }
+    - !light.event.show.starting_hue.Event { value: 195 }
+    - !light.event.show.starting_hue.Event { value: 210 }
+    - !light.event.show.starting_hue.Event { value: 225 }
+    - !light.event.show.starting_hue.Event { value: 240 }
+    - !light.event.show.starting_hue.Event { value: 255 }
+    - !light.event.show.starting_hue.Event { value: 270 }
+    - !light.event.show.starting_hue.Event { value: 285 }
+    - !light.event.show.starting_hue.Event { value: 300 }
+    - !light.event.show.starting_hue.Event { value: 315 }
+    - !light.event.show.starting_hue.Event { value: 330 }
+    - !light.event.show.starting_hue.Event { value: 345 }
+    - !light.event.show.starting_hue.Event { value: 360 }
+
+- !circadian_rhythm.Trigger
+  name: "adjust show ending hue during the day"
+  events: []
+  events_in_a_day:
+    - !light.event.show.ending_hue.Event { value: 0 }
+    - !light.event.show.ending_hue.Event { value: 115 }
+    - !light.event.show.ending_hue.Event { value: 130 }
+    - !light.event.show.ending_hue.Event { value: 145 }
+    - !light.event.show.ending_hue.Event { value: 160 }
+    - !light.event.show.ending_hue.Event { value: 175 }
+    - !light.event.show.ending_hue.Event { value: 190 }
+    - !light.event.show.ending_hue.Event { value: 205 }
+    - !light.event.show.ending_hue.Event { value: 220 }
+    - !light.event.show.ending_hue.Event { value: 235 }
+    - !light.event.show.ending_hue.Event { value: 250 }
+    - !light.event.show.ending_hue.Event { value: 265 }
+    - !light.event.show.ending_hue.Event { value: 280 }
+    - !light.event.show.ending_hue.Event { value: 295 }
+    - !light.event.show.ending_hue.Event { value: 310 }
+    - !light.event.show.ending_hue.Event { value: 325 }
+    - !light.event.show.ending_hue.Event { value: 340 }
+    - !light.event.show.ending_hue.Event { value: 355 }
+    - !light.event.show.ending_hue.Event { value: 170 }
+    - !light.event.show.ending_hue.Event { value: 185 }
+    - !light.event.show.ending_hue.Event { value: 200 }
+    - !light.event.show.ending_hue.Event { value: 215 }
+    - !light.event.show.ending_hue.Event { value: 230 }
+    - !light.event.show.ending_hue.Event { value: 245 }
+    - !light.event.show.ending_hue.Event { value: 260 }
+
+- !circadian_rhythm.Trigger
+  name: "adjust waveform during the day"
+  events: []
+  events_in_a_day:
+    - !home.event.waveform.Event.Sine
+    - !home.event.waveform.Event.HalfSine
+    - !home.event.waveform.Event.Pulse
+    - !home.event.waveform.Event.Pulse
+    - !home.event.waveform.Event.Saw
+    - !home.event.waveform.Event.Sine

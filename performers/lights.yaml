@@ -1,0 +1,15 @@
+lights:
+  - "indoor zone light command"
+  - "indoor presence light command"
+  - "indoor dimmerable light command"
+  - "indoor hue light command"
+
+ground floor lights:
+  - "indoor zone light command"
+
+first floor lights:
+  - "indoor presence light command"
+  - "indoor dimmerable light command"
+
+second floor lights:
+  - "indoor hue light command"

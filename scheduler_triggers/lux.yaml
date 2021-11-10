@@ -1,0 +1,10 @@
+- !protocol.Trigger
+  name: "sun lux sensor changed"
+  notify more events: []
+  when triggered performers: "sun lux sensor trigger"
+
+- !protocol.Trigger
+  name: "sun lux balance"
+  notify more events: []
+  when triggered performers: "sun lux sensor balance trigger"
+

@@ -1,0 +1,7 @@
+- !schedule
+  trigger: "toggle alarmed on -> alarmed off"
+  for performers: "indoor zone light command"
+
+- !schedule
+  trigger: "toggle alarmed off -> alarmed on"
+  for performers: "indoor zone light command"

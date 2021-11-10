@@ -1,0 +1,28 @@
+- !Performer
+  name: "ground floor motion sensor triggers"
+  for appliance: "ground floor motion sensor"
+  commands: [ ]
+  triggers:
+    - !knx_plugin.trigger.dpt_switch.On
+      addresses: [ 0xA13, ]
+      events:
+        - !home.event.motion.Event.Spotted
+    - !knx_plugin.trigger.dpt_switch.Off
+      addresses: [ 0xA13, ]
+      events:
+        - !home.event.motion.Event.Missed
+
+
+- !Performer
+  name: "first floor motion sensor triggers"
+  for appliance: "first floor motion sensor"
+  commands: [ ]
+  triggers:
+    - !knx_plugin.trigger.dpt_switch.On
+      addresses: [ 0xA15, ]
+      events:
+        - !home.event.motion.Event.Spotted
+    - !knx_plugin.trigger.dpt_switch.Off
+      addresses: [ 0xA15, ]
+      events:
+        - !home.event.motion.Event.Missed

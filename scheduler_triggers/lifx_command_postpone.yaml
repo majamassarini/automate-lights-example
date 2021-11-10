@@ -1,0 +1,23 @@
+# Wait for Lifx bulb to be up and ready to react to new commands
+
+- !protocol.delay.Trigger
+  name: "adjust lifx bulb settings for circadian rhythm"
+  notify more events:
+    - !home.appliance.light.indoor.dimmerable.event.forced.Event.CircadianRhythm
+  when triggered performers: "trigger circadian rhythm"
+  and timeout expires: 8
+
+- !protocol.delay.Trigger
+  name: "adjust lifx bulb settings when entering show state"
+  notify more events:
+    - !home.appliance.light.indoor.dimmerable.event.forced.Event.Show
+  when triggered performers: "entering show state"
+  and timeout expires: 8
+
+- !protocol.delay.Trigger
+  name: "adjust lifx bulb settings when exiting show state"
+  notify more events:
+    - !home.appliance.light.indoor.dimmerable.event.forced.Event.CircadianRhythm
+  when triggered performers: "entering circadian rhythm"
+  and timeout expires: 8
+

@@ -1,0 +1,8 @@
+- !schedule
+  trigger: "sun lux sensor changed"
+  for performers: "lights"
+
+- !schedule
+  trigger: "sun lux balance"
+  for performers: "indoor dimmerable light command"
+

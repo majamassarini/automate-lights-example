@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from http://172.31.10.243:8181/index
+* At UTC time: 2021-11-10 20:37:08.965233
+
+--><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="static/0062a8e6__icon_128x128_blu.png">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bulma%400.9.1/css/dff7d2a4__bulma.min.css">
+
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1/0a8ce0df__jquery.min.js"></script>
+    <script src="../kit.fontawesome.com/f5f88875__dcf90dd78d.js"></script>
+    <script type="text/javascript" src="static/8cc66c49__homino.js"></script>
+    <title>Last Events</title>
+</head>
+
+<body>
+<section class="section">
+    <div class="container">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="static/0062a8e6__icon_128x128_blu.png" width="32" height="32">
+        </a>
+
+        <a role="button" id="burger-button" onclick='$("#burger-button").toggleClass("is-active");$("#home-navbar").toggleClass("is-active")' class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="home-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="home-navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="./58c23958__index.html">
+            <span class="icon has-text-info">
+                <i class="fas fa-home"></i>
+            </span>
+                <span>Home</span>
+            </a>
+            <a class="navbar-item" href="./db484481__collections.html">
+                <span class="icon has-text-info">
+                <i class="fas fa-list"></i>
+            </span>
+                <span>Collections</span>
+            </a>
+            
+            <!--a class="navbar-item" href="/editor">
+                <span class="icon has-text-info">
+                <i class="fas fa-edit"></i>
+            </span>
+                <span>Configurator</span>
+            </a-->
+            <a class="navbar-item" href="./201ead5d__logs.html">
+                <span class="icon has-text-info">
+                <i class="far fa-clipboard"></i>
+            </span>
+                <span>Logs</span>
+            </a>
+            
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                
+                <div class="buttons">
+                    <label class="label is-info mr-3">admin</label>
+                    <form action="./e5dbe29c__logout.html" method="post">
+                        <input class="button is-light" type="submit" value="Logout">
+                    </form>
+                </div>
+                
+                <div class="modal" id="modal-login">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Login</p>
+            <button onclick='$("#modal-login").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form action="./65eeb6e3__login.html" method="post">
+                <label for="username">Username</label>
+                <input class="input is-info" type="text" name="username" id="username" value="">
+                <label for="password">Password</label>
+                <input class="input is-info" type="password" name="password" id="password" value="">
+                <input class="button is-info mt-6" type="submit" value="Login">
+            </form>
+        </section>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/71632c9c__first%20floor%20motion%20sensor.html">first floor motion sensor</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="first-floor-motion-sensor-label">No motion</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="first-floor-motion-sensor-icon" class="far fa-eye"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/8948e566__an%20indoor%20presence%20light.html">an indoor presence light</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="an-indoor-presence-light-label">On</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="an-indoor-presence-light-icon" class="fas fa-lightbulb"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                                <li>
+                                    <span class="icon has-text-dark">
+                                    <i class="far fa-hand-point-up"></i>
+                                    </span>
+                                    <span>Forced on</span>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-hand-point-up"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-house-user"></i>
+                                </span>
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/b0919f55__an%20indoor%20dimmerable%20light.html">an indoor dimmerable light</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="an-indoor-dimmerable-light-label">Following circadian rhythm</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="an-indoor-dimmerable-light-icon" class="fas fa-sync"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                                <li>
+                                    <span class="icon has-text-dark">
+                                    <i class="fas fa-sync"></i>
+                                    </span>
+                                    <span>Forced circadian rhytm</span>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-sync"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-cloud"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-house-user"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fa-solid fa-stumbleupon"></i>
+                                </span>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/db606831__an%20indoor%20zone%20light.html">an indoor zone light</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="an-indoor-zone-light-label">Off</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="an-indoor-zone-light-icon" class="far fa-lightbulb"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                                <li>
+                                    <span class="icon has-text-dark">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    </span>
+                                    <span>No one is in here</span>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-thumbs-up"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-toggle-on"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-cloud"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-bell"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-shoe-prints"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                </span>
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/f990a0df__ground%20floor%20motion%20sensor.html">ground floor motion sensor</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="ground-floor-motion-sensor-label">No motion</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="ground-floor-motion-sensor-icon" class="far fa-eye"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/19a93577__first%20floor%20alarm%20zone.html">first floor alarm zone</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                                <li>
+                                    <span class="icon has-text-dark">
+                                    <i class="far fa-bell"></i>
+                                    </span>
+                                    <span>Alarm is not armed</span>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-eye"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-bell"></i>
+                                </span>
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/8fab7740__sun%20lux%20sensor.html">sun lux sensor</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="sun-lux-sensor-label">0.0 lux</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="sun-lux-sensor-icon" class="None"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                        
+                    
+                </div>
+            </div>
+        
+            <div class="tile is-parent box mt-6">
+                <div class="tile is-child is-4">
+                    <b><a href="appliance/826dbd3c__ground%20floor%20alarm%20zone.html">ground floor alarm zone</a></b>
+                </div>
+                <div class="tile is-child is-3">
+                    <b>
+                        <label id="ground-floor-alarm-zone-label">Unarmed</label>
+                        <span class="icon has-text-dark mr-3">
+                            <i id="ground-floor-alarm-zone-icon" class="far fa-bell"></i>
+                        </span>
+                    </b>
+                    <ul class="content is-small events mt-3">
+                        
+                            
+                                <li>
+                                    <span class="icon has-text-dark">
+                                    <i class="far fa-bell"></i>
+                                    </span>
+                                    <span>Alarm is not armed</span>
+                                </li>
+                            
+                        
+                    </ul>
+                </div>
+                <div class="tile is-child is-4">
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-eye"></i>
+                                </span>
+                            
+                        
+                            
+                                <span class="icon has-text-info">
+                                        <i class="far fa-bell"></i>
+                                </span>
+                            
+                        
+                    
+                </div>
+            </div>
+        
+    </div>
+</section>
+</body>
+</html>

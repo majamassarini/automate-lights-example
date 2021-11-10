@@ -1,0 +1,14 @@
+# Wait for Lifx bulb to be up and ready to react to new commands
+
+- !schedule
+  trigger: "adjust lifx bulb settings for circadian rhythm"
+  for performers: "lifx indoor hue light commands"
+
+- !schedule
+  trigger: "adjust lifx bulb settings when entering show state"
+  for performers: "lifx indoor hue light commands"
+
+- !schedule
+  trigger: "adjust lifx bulb settings when exiting show state"
+  for performers: "lifx indoor hue light commands"
+

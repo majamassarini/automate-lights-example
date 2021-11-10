@@ -1,0 +1,12 @@
+- !state.entering.delay.Trigger
+  name: "toggle alarmed on -> alarmed off"
+  notify events:
+    - !home.event.toggle.Event.Off
+  when appliance state became: "Alarmed On"
+  and timeout expires: 60
+- !state.entering.delay.Trigger
+  name: "toggle alarmed off -> alarmed on"
+  notify events:
+    - !home.event.toggle.Event.On
+  when appliance state became: "Alarmed Off"
+  and timeout expires: 60

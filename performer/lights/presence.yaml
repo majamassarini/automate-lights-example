@@ -1,0 +1,20 @@
+- !Performer
+  name: "trigger indoor presence light"
+  for appliance: "an indoor presence light"
+  commands: [ ]
+  triggers:
+    - !knx_plugin.trigger.dpt_switch.On
+      addresses: [ 0x0DE1, 0x0F41 ]
+      events:
+        - !home.appliance.light.event.forced.Event.On
+    - !knx_plugin.trigger.dpt_switch.Off
+      addresses: [ 0x0DE1, 0x0F41 ]
+      events:
+        - !home.appliance.light.event.forced.Event.Off
+
+- !Performer
+  name: "indoor presence light command"
+  for appliance: "an indoor presence light"
+  commands:
+    - !knx_plugin.command.dpt_switch.OnOff { addresses: [ 0x0DE1, 0x0F41 ] }
+  triggers: [ ]

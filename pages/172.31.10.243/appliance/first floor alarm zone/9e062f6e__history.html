@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from http://172.31.10.243:8181/appliance/first floor alarm zone/history
+* At UTC time: 2021-11-10 20:37:09.470298
+
+--><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../../static/0062a8e6__icon_128x128_blu.png">
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/bulma%400.9.1/css/dff7d2a4__bulma.min.css">
+
+    <title>first floor alarm zone history</title>
+
+    <script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1/0a8ce0df__jquery.min.js"></script>
+    <script src="../../../kit.fontawesome.com/f5f88875__dcf90dd78d.js"></script>
+    <script type="text/javascript" src="../../static/8cc66c49__homino.js"></script>
+</head>
+
+<body>
+<section class="section">
+    <div class="container">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="../../static/0062a8e6__icon_128x128_blu.png" width="32" height="32">
+        </a>
+
+        <a role="button" id="burger-button" onclick='$("#burger-button").toggleClass("is-active");$("#home-navbar").toggleClass("is-active")' class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="home-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="home-navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../../58c23958__index.html">
+            <span class="icon has-text-info">
+                <i class="fas fa-home"></i>
+            </span>
+                <span>Home</span>
+            </a>
+            <a class="navbar-item" href="../../db484481__collections.html">
+                <span class="icon has-text-info">
+                <i class="fas fa-list"></i>
+            </span>
+                <span>Collections</span>
+            </a>
+            
+            <!--a class="navbar-item" href="/editor">
+                <span class="icon has-text-info">
+                <i class="fas fa-edit"></i>
+            </span>
+                <span>Configurator</span>
+            </a-->
+            <a class="navbar-item" href="../../201ead5d__logs.html">
+                <span class="icon has-text-info">
+                <i class="far fa-clipboard"></i>
+            </span>
+                <span>Logs</span>
+            </a>
+            
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                
+                <div class="buttons">
+                    <label class="label is-info mr-3">admin</label>
+                    <form action="../../e5dbe29c__logout.html" method="post">
+                        <input class="button is-light" type="submit" value="Logout">
+                    </form>
+                </div>
+                
+                <div class="modal" id="modal-login">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Login</p>
+            <button onclick='$("#modal-login").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form action="../../65eeb6e3__login.html" method="post">
+                <label for="username">Username</label>
+                <input class="input is-info" type="text" name="username" id="username" value="">
+                <label for="password">Password</label>
+                <input class="input is-info" type="password" name="password" id="password" value="">
+                <input class="button is-info mt-6" type="submit" value="Login">
+            </form>
+        </section>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <nav class="breadcrumb mt-6" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="../../db484481__collections.html">Collections</a></li>
+                <li><a href="../../collection/d8649ce2__Sensors.html">Sensors</a></li>
+                <li><a href="../19a93577__first%20floor%20alarm%20zone.html">first floor alarm zone</a></li>
+                <li class="is-active"><a>history</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="title">first floor alarm zone</h1>
+
+        <div class="tile is-ancestor is-vertical mt-6">
+            <form class="tile is-parent box" action="./9e062f6e__history.html" method="POST" id="form-update-history">
+                <div class="tile is-child is-small">
+                    <label class="has-text-info is-small">Number of events: </label>
+                </div>
+                <div class="tile is-child is-small">
+                    <input class="input is-info is-small" type="number" name="num-of-events" id="num-of-events" value="10">
+                </div>
+                <div class="tile is-child is-small">
+                    <input class="button is-info is-small" type="submit" value="update">
+                </div>
+            </form>
+
+
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 17:50:01 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 17:21:28 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 16:44:10 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 16:21:27 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 16:00:46 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 08:34:55 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov 10 07:06:40 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Tue Nov  9 23:49:22 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Tue Nov  9 17:15:35 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Tue Nov  9 12:28:52 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Tue Nov  9 07:12:17 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Mon Nov  8 23:57:45 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Mon Nov  8 16:01:46 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Mon Nov  8 12:39:25 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Mon Nov  8 11:55:52 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Mon Nov  8 08:35:32 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Mon Nov  8 07:09:03 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sun Nov  7 23:14:26 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sun Nov  7 22:15:49 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sun Nov  7 10:45:22 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sun Nov  7 07:40:07 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Nov  6 23:46:52 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Nov  6 09:43:11 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Nov  6 08:48:32 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Nov  5 17:40:23 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Nov  5 16:59:25 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Nov  5 16:20:39 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Nov  5 08:34:22 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Nov  5 07:08:10 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Nov  4 22:52:08 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Nov  4 16:12:29 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Nov  4 08:28:02 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Nov  4 07:05:31 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Wed Nov  3 23:42:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sun Oct 31 06:40:07 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Oct 30 23:36:30 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Oct 30 16:46:21 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Oct 30 08:55:05 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Sat Oct 30 07:13:46 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Oct 29 23:10:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-bell"></i>
+                                </span>
+                                <span>Alarm is armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Oct 29 17:42:40 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="far fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Unarmed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-bell"></i>
+                                </span>
+                                <span>Alarm is not armed</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Fri Oct 29 16:50:01 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="first-floor-alarm-zone-icon" class="fas fa-bell"></i>
+                            </span>
+                            <label id="first-floor-alarm-zone-label">Armed</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+
+        </div>
+    </div>
+</section>
+</body>
+</html>

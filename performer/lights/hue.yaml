@@ -1,0 +1,106 @@
+- !Performer
+  name: "trigger circadian rhythm"
+  for appliance: "an indoor hue light"
+  commands: []
+  triggers:
+    - !knx_plugin.trigger.dpt_switch.On
+      addresses: [ 0x0E91, ]
+      events:
+        - !home.appliance.light.indoor.dimmerable.event.forced.Event.CircadianRhythm
+    - !knx_plugin.trigger.dpt_switch.Off
+      addresses: [ 0x0E91, ]
+      events:
+        - !home.appliance.light.indoor.dimmerable.event.forced.Event.Not
+
+- !Performer
+  name: "indoor hue light command"
+  for appliance: "an indoor hue light"
+  commands:
+    - !knx_plugin.command.dpt_switch.OnOff { addresses: [ 0x0E91, ] }
+  triggers: [ ]
+
+
+- !Performer
+  name: "entering show state" # is delayed, used by a scheduler trigger
+  for appliance: "an indoor hue light"
+  commands: [ ]
+  triggers:
+    - !knx_plugin.trigger.dpt_scene_control.Activate # triggered by scene button 1
+      addresses: [ 0x0B0F ]
+      number: 15
+      events: []
+
+- !Performer
+  name: "exiting from circadian rhythm"
+  for appliance: "an indoor hue light"
+  commands: [ ] # do nothing but transit state machine (in a not forced state) waiting for new forced event defined in a scheduler trigger
+  triggers:
+    - !knx_plugin.trigger.dpt_scene_control.Activate
+      addresses: [ 0x0B0F ]
+      number: 15
+      events:
+        - !home.appliance.light.indoor.dimmerable.event.forced.Event.Not
+
+- !Performer
+  name: "entering circadian rhythm" # is delayed, used by a scheduler trigger
+  for appliance: "an indoor hue light"
+  commands: [ ]
+  triggers:
+    - !knx_plugin.trigger.dpt_scene_control.Activate # triggered by scene button 2
+      addresses: [ 0x0B10 ]
+      number: 16
+      events: []
+
+- !Performer
+  name: "exiting from show state"
+  for appliance: "an indoor hue light"
+  commands: [ ]# do nothing but transit state machine (in a not forced state) waiting for new forced event defined in a scheduler trigger
+  triggers:
+    - !knx_plugin.trigger.dpt_scene_control.Activate
+      addresses: [ 0x0B10 ]
+      number: 16
+      events:
+        - !home.appliance.light.indoor.dimmerable.event.forced.Event.Not
+
+- !Performer
+  name: "indoor hue light: trigger lifx state"
+  for appliance: "an indoor hue light"
+  commands: []
+  triggers:
+    - !lifx_plugin.trigger.State
+      addresses: [["172.31.10.245", 56700]]
+      events: []
+
+- !Performer
+  name: "lifx indoor hue light commands"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetColor {addresses: [["172.31.10.245", 56700]]}
+    - !lifx_plugin.command.SetWaveform {addresses: [["172.31.10.245", 56700]]}
+  triggers: []
+
+
+- !Performer
+  name: "color indoor hue light command"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetColor { addresses: [ [ "172.31.10.245", 56700 ] ] }
+  triggers: [ ]
+
+
+- !Performer
+  name: "show indoor hue light command"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetWaveform { addresses: [ [ "172.31.10.245", 56700 ] ] }
+  triggers: [ ]
+
+
+- !Performer
+  name: "set lifx brightness"
+  for appliance: "an indoor hue light"
+  commands:
+    - !lifx_plugin.command.SetColor {addresses: [["172.31.10.245", 56700]]}
+  triggers:
+    - !knx_plugin.trigger.dpt_control_dimming.BrightnessStep {addresses: [0x0C07]}
+

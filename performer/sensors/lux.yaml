@@ -1,0 +1,16 @@
+- !Performer
+  name: "sun lux sensor trigger"
+  for appliance: "sun lux sensor"
+  commands: []
+  triggers:
+  - !knx_plugin.trigger.dpt_value_lux.Always {addresses: [0x0A04]}
+  - !knx_plugin.trigger.dpt_value_lux.DeepDark {addresses: [0x0A04]}
+  - !knx_plugin.trigger.dpt_value_lux.Dark {addresses: [0x0A04]}
+  - !knx_plugin.trigger.dpt_value_lux.Bright {addresses: [0x0A04]}
+
+- !Performer
+  name: "sun lux sensor balance trigger"
+  for appliance: "sun lux sensor"
+  commands: []
+  triggers:
+  - !knx_plugin.trigger.dpt_value_lux.balance.SunBrightness {addresses: [0x0A04]}

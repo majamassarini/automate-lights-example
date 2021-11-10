@@ -1,0 +1,30 @@
+# The zone light is the only light Appliance interested in armed on/off events
+# The zone light is the only light Appliance interested in presence on/off events sent by a motion sensor
+
+- !schedule
+  trigger: "armed on ground floor alarm zone"
+  for performers: "indoor zone light command"
+- !schedule
+  trigger: "armed off ground floor alarm zone"
+  for performers: "indoor zone light command"
+- !schedule
+  trigger: "presence events for ground floor alarm zone"
+  for performers: "indoor zone light command"
+
+# If alarm is armed -> no one should be using lights (excluding the zone lights at the ground floor) -> send a presence off event that will turn off lights (if the case)
+
+- !schedule
+  trigger: "no one at the first floor"
+  for performers: "first floor lights"
+- !schedule
+  trigger: "someone at the first floor"
+  for performers: "first floor lights"
+
+# If alarm is armed at the first floor, no one is at home or they are going to bed -> second floor lights can be turned off
+
+- !schedule
+  trigger: "no one at the first floor"
+  for performers: "second floor lights"
+- !schedule
+  trigger: "someone at the first floor"
+  for performers: "second floor lights"

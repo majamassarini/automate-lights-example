@@ -1,0 +1,55 @@
+- !protocol.Trigger
+  name: "armed on first floor alarm zone"
+  notify more events: []
+  when triggered performers: "first floor alarm trigger armed on"
+
+- !protocol.Trigger
+  name: "armed off first floor alarm zone"
+  notify more events: []
+  when triggered performers: "first floor alarm trigger armed off"
+
+- !protocol.Trigger
+  name: "no one at the first floor"
+  notify more events:
+    - !home.event.presence.Event.Off
+  when triggered performers: "first floor alarm trigger armed on"
+
+- !protocol.Trigger
+  name: "someone at the first floor"
+  notify more events:
+    - !home.event.presence.Event.On
+  when triggered performers: "first floor alarm trigger armed off"
+
+- !protocol.Trigger
+  name: "presence events for first floor alarm zone"
+  notify more events: []
+  when triggered performers: "first floor alarm trigger presence"
+
+
+- !protocol.Trigger
+  name: "armed on ground floor alarm zone"
+  notify more events: []
+  when triggered performers: "ground floor alarm trigger armed on"
+
+- !protocol.Trigger
+  name: "armed off ground floor alarm zone"
+  notify more events: []
+  when triggered performers: "ground floor alarm trigger armed off"
+
+- !protocol.Trigger
+  name: "no one at ground floor"
+  notify more events:
+    - !home.event.presence.Event.Off
+  when triggered performers: "ground floor alarm trigger armed on"
+
+- !protocol.Trigger
+  name: "someone at ground floor"
+  notify more events:
+    - !home.event.presence.Event.On
+  when triggered performers: "ground floor alarm trigger armed off"
+
+- !protocol.Trigger
+  name: "presence events for ground floor alarm zone"
+  notify more events: []
+  when triggered performers: "ground floor alarm trigger presence"
+

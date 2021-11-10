@@ -1,0 +1,12 @@
+!Appliances
+  Sensors:
+    - !sensor.motion.Appliance {name: "ground floor motion sensor", events: []}
+    - !sensor.alarm.Appliance {name: "ground floor alarm zone", events: []}
+    - !sensor.motion.Appliance {name: "first floor motion sensor", events: []}
+    - !sensor.alarm.Appliance {name: "first floor alarm zone", events: []}
+    - !sensor.luxmeter.Appliance {name: "sun lux sensor", events: []}
+  Lights:
+    - !light.presence.Appliance {name: "an indoor presence light", events: []}
+    - !light.zone.Appliance {name: "an indoor zone light", events: []}
+    - !light.indoor.dimmerable.Appliance {name: "an indoor dimmerable light", events: []}
+    - !light.indoor.hue.Appliance {name: "an indoor hue light", events: []}

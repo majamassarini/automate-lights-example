@@ -1,0 +1,44 @@
+- !schedule
+  trigger: "adjust brightness during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust brightness during the day"
+  for performers: "indoor dimmerable light command"
+
+- !schedule
+  trigger: "adjust show starting brightness during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust show ending brightness during the day"
+  for performers: "show indoor hue light command"
+
+- !schedule
+  trigger: "adjust show starting saturation during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust show ending saturation during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust temperature during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust hue during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust show starting hue during the day"
+  for performers: "color indoor hue light command"
+
+- !schedule
+  trigger: "adjust show ending hue during the day"
+  for performers: "show indoor hue light command"
+
+- !schedule
+  trigger: "adjust waveform during the day"
+  for performers: "show indoor hue light command"
+
