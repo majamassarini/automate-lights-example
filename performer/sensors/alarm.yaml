@@ -4,7 +4,7 @@
   commands: [ ]
   triggers:
     - !knx_plugin.trigger.dpt_switch.On
-      addresses: [ 0xA1D, ]
+      addresses: [ 0xA1E, ]
       events:
         - !home.event.alarm.armed.Event.On
 
@@ -14,7 +14,7 @@
   commands: [ ]
   triggers:
     - !knx_plugin.trigger.dpt_switch.Off
-      addresses: [ 0xA1D, ]
+      addresses: [ 0xA1E, ]
       events:
         - !home.event.alarm.armed.Event.Off
 
