@@ -5,7 +5,7 @@
 * AerWebCopy Engine [version 6.3.0]
 * Copyright Aeroson Systems & Co.
 * File mirrored from http://172.31.10.243:8181/appliance/an indoor dimmerable light
-* At UTC time: 2021-11-10 20:37:07.905282
+* At UTC time: 2021-11-22 21:25:29.816645
 
 --><head>
     <meta charset="utf-8">
@@ -111,9 +111,9 @@
         </nav>
 
         <h1 class="title">an indoor dimmerable light is <b id="an-indoor-dimmerable-light">
-            <label class="ml-6" id="an-indoor-dimmerable-light-label">Following circadian rhythm</label>
+            <label class="ml-6" id="an-indoor-dimmerable-light-label">Off</label>
             <span class="icon has-text-dark ml-2">
-                <i id="an-indoor-dimmerable-light-icon" class="fas fa-sync"></i>
+                <i id="an-indoor-dimmerable-light-icon" class="far fa-lightbulb"></i>
             </span>
         </b>
         </h1>
@@ -130,7 +130,7 @@
 </div>
 <div class="tile is-child pr-6">
     <span class="icon has-text-info">
-        <i id="an-indoor-dimmerable-light-10-icon" class="fas fa-sync"></i>
+        <i id="an-indoor-dimmerable-light-10-icon" class="far fa-thumbs-up"></i>
     </span>
 
     <div class="select is-info">
@@ -140,13 +140,13 @@
                 
                     <option value="Off">off</option>
                 
-                    <option value="CircadianRhythm" selected>circadian rhythm</option>
+                    <option value="CircadianRhythm">circadian rhythm</option>
                 
                     <option value="LuxBalance">lux balancing</option>
                 
                     <option value="Show">show</option>
                 
-                    <option value="Not">no</option>
+                    <option value="Not" selected>no</option>
                 
             </select>
     </div>
@@ -202,7 +202,7 @@
 
 
             <div class="mt-4">
-                Event <b>Is it forced?: circadian rhythm</b>
+                Event <b>Is it forced?: no</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20indoor%20dimmerable%20light/send_to_others',
                                     'home.appliance.light.indoor.dimmerable.event.forced.event', 'Event');
@@ -666,7 +666,7 @@
             
 
                 
-                    <form class="tile is-parent box" action="./b0919f55__an%20indoor%20dimmerable%20light.html" method="POST" id="form-an-indoor-dimmerable-light-5">
+                    <form class="tile is-parent box" style="display: none;" action="./b0919f55__an%20indoor%20dimmerable%20light.html" method="POST" id="form-an-indoor-dimmerable-light-5">
                         <input type="hidden" name="module" value="home.appliance.light.event.circadian_rhythm.brightness">
                         <input type="hidden" name="klass" value="Event">
                         <div class="tile is-child is-3">
@@ -674,7 +674,7 @@
 </div>
 <div class="tile is-child pr-6">
     
-    <input class="input is-info" type="number" min="0" max="100" name="value" id="an-indoor-dimmerable-light-5" value="40" onchange="ajaxPostValue('', 'home.appliance.light.event.circadian_rhythm.brightness', 'Event', $('#an-indoor-dimmerable-light-5').val())">
+    <input class="input is-info" type="number" min="0" max="100" name="value" id="an-indoor-dimmerable-light-5" value="30" onchange="ajaxPostValue('', 'home.appliance.light.event.circadian_rhythm.brightness', 'Event', $('#an-indoor-dimmerable-light-5').val())">
     
 </div>
 <div class="modal" id="modal-an-indoor-dimmerable-light-5-enabled">
@@ -716,7 +716,7 @@
 
 
             <div class="mt-4">
-                Event <b>Brightness: 40</b>
+                Event <b>Brightness: 30</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20indoor%20dimmerable%20light/send_to_others',
                                     'home.appliance.light.event.circadian_rhythm.brightness', 'Event');
@@ -786,7 +786,7 @@
 
 
             <div class="mt-4">
-                Event <b>Brightness: 40</b>
+                Event <b>Brightness: 30</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20indoor%20dimmerable%20light/send_to_others',
                                     'home.appliance.light.event.circadian_rhythm.brightness', 'Event');

@@ -5,7 +5,7 @@
 * AerWebCopy Engine [version 6.3.0]
 * Copyright Aeroson Systems & Co.
 * File mirrored from http://172.31.10.243:8181/appliance/an indoor presence light
-* At UTC time: 2021-11-10 20:37:08.207822
+* At UTC time: 2021-11-22 21:25:26.038573
 
 --><head>
     <meta charset="utf-8">
@@ -111,9 +111,9 @@
         </nav>
 
         <h1 class="title">an indoor presence light is <b id="an-indoor-presence-light">
-            <label class="ml-6" id="an-indoor-presence-light-label">On</label>
+            <label class="ml-6" id="an-indoor-presence-light-label">Off</label>
             <span class="icon has-text-dark ml-2">
-                <i id="an-indoor-presence-light-icon" class="fas fa-lightbulb"></i>
+                <i id="an-indoor-presence-light-icon" class="far fa-lightbulb"></i>
             </span>
         </b>
         </h1>
@@ -130,17 +130,17 @@
 </div>
 <div class="tile is-child pr-6">
     <span class="icon has-text-info">
-        <i id="an-indoor-presence-light-1-icon" class="far fa-hand-point-up"></i>
+        <i id="an-indoor-presence-light-1-icon" class="far fa-thumbs-up"></i>
     </span>
 
     <div class="select is-info">
             <select name="value" id="an-indoor-presence-light-1" form="form-an-indoor-presence-light-1" onchange="ajaxPostValue('', 'home.appliance.light.event.forced.event', 'Event', $('#an-indoor-presence-light-1 option:selected').val())">
                 
-                    <option value="On" selected>on</option>
+                    <option value="On">on</option>
                 
                     <option value="Off">off</option>
                 
-                    <option value="Not">no</option>
+                    <option value="Not" selected>no</option>
                 
             </select>
     </div>
@@ -196,7 +196,7 @@
 
 
             <div class="mt-4">
-                Event <b>Is it forced?: on</b>
+                Event <b>Is it forced?: no</b>
                 <div class="mt-4">
                     <button class="button is-info" onclick="ajaxPostSimple('/appliance/an%20indoor%20presence%20light/send_to_others',
                                     'home.appliance.light.event.forced.event', 'Event');
