@@ -1,0 +1,2934 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from http://172.31.10.243:8181/appliance/an indoor hue light/history
+* At UTC time: 2021-12-16 15:52:32.576361
+
+--><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../../static/0062a8e6__icon_128x128_blu.png">
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/bulma%400.9.1/css/dff7d2a4__bulma.min.css">
+
+    <title>an indoor hue light history</title>
+
+    <script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1/0a8ce0df__jquery.min.js"></script>
+    <script src="../../../kit.fontawesome.com/f5f88875__dcf90dd78d.js"></script>
+    <script type="text/javascript" src="../../static/8cc66c49__homino.js"></script>
+</head>
+
+<body>
+<section class="section">
+    <div class="container">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="../../static/0062a8e6__icon_128x128_blu.png" width="32" height="32">
+        </a>
+
+        <a role="button" id="burger-button" onclick='$("#burger-button").toggleClass("is-active");$("#home-navbar").toggleClass("is-active")' class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="home-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="home-navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../../58c23958__index.html">
+            <span class="icon has-text-info">
+                <i class="fas fa-home"></i>
+            </span>
+                <span>Home</span>
+            </a>
+            <a class="navbar-item" href="../../db484481__collections.html">
+                <span class="icon has-text-info">
+                <i class="fas fa-list"></i>
+            </span>
+                <span>Collections</span>
+            </a>
+            
+            <!--a class="navbar-item" href="/editor">
+                <span class="icon has-text-info">
+                <i class="fas fa-edit"></i>
+            </span>
+                <span>Configurator</span>
+            </a-->
+            <a class="navbar-item" href="../../201ead5d__logs.html">
+                <span class="icon has-text-info">
+                <i class="far fa-clipboard"></i>
+            </span>
+                <span>Logs</span>
+            </a>
+            
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                
+                <div class="buttons">
+                    <label class="label is-info mr-3">admin</label>
+                    <form action="../../e5dbe29c__logout.html" method="post">
+                        <input class="button is-light" type="submit" value="Logout">
+                    </form>
+                </div>
+                
+                <div class="modal" id="modal-login">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Login</p>
+            <button onclick='$("#modal-login").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form action="../../65eeb6e3__login.html" method="post">
+                <label for="username">Username</label>
+                <input class="input is-info" type="text" name="username" id="username" value="">
+                <label for="password">Password</label>
+                <input class="input is-info" type="password" name="password" id="password" value="">
+                <input class="button is-info mt-6" type="submit" value="Login">
+            </form>
+        </section>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <nav class="breadcrumb mt-6" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="../../db484481__collections.html">Collections</a></li>
+                <li><a href="../../collection/1fb79485__Lights.html">Lights</a></li>
+                <li><a href="../54d6402f__an%20indoor%20hue%20light.html">an indoor hue light</a></li>
+                <li class="is-active"><a>history</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="title">an indoor hue light</h1>
+
+        <div class="tile is-ancestor is-vertical mt-6">
+            <form class="tile is-parent box" action="./52a935bd__history.html" method="POST" id="form-update-history">
+                <div class="tile is-child is-small">
+                    <label class="has-text-info is-small">Number of events: </label>
+                </div>
+                <div class="tile is-child is-small">
+                    <input class="input is-info is-small" type="number" name="num-of-events" id="num-of-events" value="10">
+                </div>
+                <div class="tile is-child is-small">
+                    <input class="button is-info is-small" type="submit" value="update">
+                </div>
+            </form>
+
+
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:19:22 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-cloud"></i>
+                                </span>
+                                <span>Sun brightness is very low</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:19:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 255&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:19:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 355&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:19:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 255&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:10:04 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-cloud-sun"></i>
+                                </span>
+                                <span>Sun brightness is low</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:05:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-house-user"></i>
+                                </span>
+                                <span>Someone is in home</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 60% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian brightness: 80% Brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian temperature: 4600&#176; kelvin Temperature</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fa-solid fa-stairs"></i>
+                                </span>
+                                <span>Saw</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 16:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting brightness: 80% Starting brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 15:21:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 240&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 15:21:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 340&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 15:21:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 240&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 14:24:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 225&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 14:24:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 325&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 14:24:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 225&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 14:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian temperature: 5600&#176; kelvin Temperature</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 13:26:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 210&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 13:26:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 310&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 13:26:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 210&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 12:28:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 195&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 12:28:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 295&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 12:28:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 195&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 12:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 90% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 12:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 100% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 11:31:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 180&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 11:31:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 280&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 11:31:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 180&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:51:18 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-sun"></i>
+                                </span>
+                                <span>Sun brightness is high</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:33:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 165&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:33:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 265&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:33:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 165&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:02:53 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-house-damage"></i>
+                                </span>
+                                <span>No one is in home</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian brightness: 100% Brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian temperature: 6500&#176; kelvin Temperature</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 10:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting brightness: 100% Starting brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 09:53:19 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-house-user"></i>
+                                </span>
+                                <span>Someone is in home</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 09:36:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 150&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 09:36:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 250&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 09:36:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 150&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:38:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 135&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:38:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 235&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:38:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 135&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:08:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-thumbs-up"></i>
+                                </span>
+                                <span>Unforced</span>
+                                </li>
+                                
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-house-damage"></i>
+                                </span>
+                                <span>No one is in home</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:04:29 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-cloud-sun"></i>
+                                </span>
+                                <span>Sun brightness is low</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:00:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 90% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:00:09 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian brightness: 80% Brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:00:06 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian temperature: 5600&#176; kelvin Temperature</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:00:06 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </span>
+                                <span>Pulse</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:00:03 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 100% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 08:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting brightness: 80% Starting brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:56:14 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-sync"></i>
+                                </span>
+                                <span>Forced circadian rhytm</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:56:06 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-thumbs-up"></i>
+                                </span>
+                                <span>Unforced</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:43:59 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-magic"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">In a show</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-magic"></i>
+                                </span>
+                                <span>Forced show</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:40:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 120&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:40:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 220&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:40:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 120&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:12:41 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-thumbs-up"></i>
+                                </span>
+                                <span>Unforced</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:09:42 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-sync"></i>
+                                </span>
+                                <span>Forced circadian rhytm</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:09:34 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="far fa-thumbs-up"></i>
+                                </span>
+                                <span>Unforced</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 07:03:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-house-user"></i>
+                                </span>
+                                <span>Someone is in home</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:47:20 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="fas fa-sync"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Following circadian rhythm</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fas fa-sync"></i>
+                                </span>
+                                <span>Forced circadian rhytm</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:43:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 105&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:43:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 205&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:43:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 105&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian brightness: 60% Brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending brightness: 100% Ending brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian temperature: 4600&#176; kelvin Temperature</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 06:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting brightness: 60% Starting brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 05:45:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 90&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 05:45:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 190&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 05:45:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 90&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:48:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 75&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:48:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 175&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:48:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 75&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 60% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian brightness: 40% Brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending brightness: 80% Ending brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian temperature: 3600&#176; kelvin Temperature</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="fa-brands fa-stumbleupon-circle"></i>
+                                </span>
+                                <span>Sine</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 90% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 04:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting brightness: 40% Starting brightness</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 03:50:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 60&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 03:50:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 160&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 03:50:24 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 60&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 02:52:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 45&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 02:52:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 145&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 02:52:48 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 45&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 01:55:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 30&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 01:55:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 130&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 01:55:12 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 30&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:57:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 15&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:57:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 115&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:57:36 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 15&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting saturation: 30% Starting saturation</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show starting hue: 0&#176; Starting hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Show ending hue: 0&#176; Ending hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                                
+                                <li>
+                                    <span class="icon has-text-info">
+                                    <i class="None"></i>
+                                </span>
+                                <span>Circadian hue: 0&#176; Hue</span>
+                                </li>
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="tile is-parent box">
+                    <div class="tile is-child">
+                        <p>Thu Dec 16 00:00:00 2021</p>
+                    </div>
+                    <div class="tile is-child">
+                        <b>
+                            <span class="icon has-text-dark mr-2">
+                                <i id="an-indoor-hue-light-icon" class="far fa-lightbulb"></i>
+                            </span>
+                            <label id="an-indoor-hue-light-label">Off</label>
+                        </b>
+                    </div>
+                    <div class="tile is-child">
+                        <ul class="events">
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+
+        </div>
+    </div>
+</section>
+</body>
+</html>

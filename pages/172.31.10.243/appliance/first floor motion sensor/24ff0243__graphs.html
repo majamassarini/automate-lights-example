@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+* AerWebCopy Engine [version 6.3.0]
+* Copyright Aeroson Systems & Co.
+* File mirrored from http://172.31.10.243:8181/appliance/first floor motion sensor/graphs
+* At UTC time: 2021-12-16 15:52:29.322940
+
+--><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../../static/0062a8e6__icon_128x128_blu.png">
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/bulma%400.9.1/css/dff7d2a4__bulma.min.css">
+
+    <title>first floor motion sensor graphs</title>
+
+    <script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/jquery/1/0a8ce0df__jquery.min.js"></script>
+    <script src="../../../kit.fontawesome.com/f5f88875__dcf90dd78d.js"></script>
+    <script type="text/javascript" src="../../static/8cc66c49__homino.js"></script>
+</head>
+
+<body>
+<section class="section">
+    <div class="container">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="../../static/0062a8e6__icon_128x128_blu.png" width="32" height="32">
+        </a>
+
+        <a role="button" id="burger-button" onclick='$("#burger-button").toggleClass("is-active");$("#home-navbar").toggleClass("is-active")' class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="home-navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="home-navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="../../58c23958__index.html">
+            <span class="icon has-text-info">
+                <i class="fas fa-home"></i>
+            </span>
+                <span>Home</span>
+            </a>
+            <a class="navbar-item" href="../../db484481__collections.html">
+                <span class="icon has-text-info">
+                <i class="fas fa-list"></i>
+            </span>
+                <span>Collections</span>
+            </a>
+            
+            <!--a class="navbar-item" href="/editor">
+                <span class="icon has-text-info">
+                <i class="fas fa-edit"></i>
+            </span>
+                <span>Configurator</span>
+            </a-->
+            <a class="navbar-item" href="../../201ead5d__logs.html">
+                <span class="icon has-text-info">
+                <i class="far fa-clipboard"></i>
+            </span>
+                <span>Logs</span>
+            </a>
+            
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                
+                <div class="buttons">
+                    <label class="label is-info mr-3">admin</label>
+                    <form action="../../e5dbe29c__logout.html" method="post">
+                        <input class="button is-light" type="submit" value="Logout">
+                    </form>
+                </div>
+                
+                <div class="modal" id="modal-login">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Login</p>
+            <button onclick='$("#modal-login").removeClass("is-active")' class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form action="../../65eeb6e3__login.html" method="post">
+                <label for="username">Username</label>
+                <input class="input is-info" type="text" name="username" id="username" value="">
+                <label for="password">Password</label>
+                <input class="input is-info" type="password" name="password" id="password" value="">
+                <input class="button is-info mt-6" type="submit" value="Login">
+            </form>
+        </section>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <nav class="breadcrumb mt-6" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="../../db484481__collections.html">Collections</a></li>
+                <li><a href="../../collection/d8649ce2__Sensors.html">Sensors</a></li>
+                <li><a href="../71632c9c__first%20floor%20motion%20sensor.html">first floor motion sensor</a></li>
+                <li class="is-active"><a>graphs</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="title">first floor motion sensor</h1>
+
+        <div class="tile is-ancestor is-vertical mt-6">
+            <div class="tile is-parent is-vertical">
+            
+                
+                <div class="tile is-parent box">
+                    
+                        <div class="tile is-centered is-child is-12">
+                        <a onclick='$("#modal-1").addClass("is-active")'>
+                            <figure class="image is-12by1">
+                                <img src="../../a7a0c898__render.jpg">
+                            </figure>
+                        </a>
+                        </div>
+                    
+                </div>
+            
+                
+                <div class="tile is-parent box">
+                    
+                        <div class="tile is-centered is-child is-12">
+                        <a onclick='$("#modal-2").addClass("is-active")'>
+                            <figure class="image is-12by1">
+                                <img src="../../0a18bdc4__render.jpg">
+                            </figure>
+                        </a>
+                        </div>
+                    
+                </div>
+            
+            </div>
+
+            <form class="tile is-parent box" action="./24ff0243__graphs.html" method="POST" id="form-update-graph">
+                <div class="tile is-child is-small">
+                    <label>From: </label>
+                </div>
+                <div class="tile is-child is-small">
+                    <input class="input is-info is-small" type="number" name="from-number" id="from-number" value="None">
+                </div>
+                <div class="select is-info tile is-child is-small">
+                    <select name="from-unit" id="from-unit" form="form-update-graph">
+                        
+                            <option value="h">hours</option>
+                        
+                            <option value="d">days</option>
+                        
+                            <option value="m">months</option>
+                        
+                    </select>
+                </div>
+                <div class="tile is-child is-small">
+                    <input class="button is-info is-small" type="submit" value="update">
+                </div>
+            </form>
+        </div>
+
+
+    
+    
+        <div class="modal" id="modal-1" onclick='$("#modal-1").removeClass("is-active")'>
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <figure class="image is-4by3">
+                    <img src="../../d1401815__render.jpg">
+                </figure>
+            </div>
+        </div>
+    
+
+    
+    
+        <div class="modal" id="modal-2" onclick='$("#modal-2").removeClass("is-active")'>
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <figure class="image is-4by3">
+                    <img src="../../05f0182c__render.jpg">
+                </figure>
+            </div>
+        </div>
+    
+
+
+    </div>
+</section>
+</body>
+</html>
